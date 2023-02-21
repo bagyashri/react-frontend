@@ -4,17 +4,24 @@ import React from 'react'
 export default function Signup() {
   return (
     <div>
-      <div className='container bg-primary-300'>
-        <div className=''>
-           <div className='flex flex-col'>
-                <span>Signup</span>
-                <button>
-                    sign in google
-                </button>
-                <button>
-                    sign up apple
-                </button>
-           </div>
+      <div className='container sm:mx-auto h-full p-10 pt-20 border border-b-danger-250 '>
+        <div className='mx-[16px] md:mx-[32px] border border-black'>
+           
+                <div className='pt-5 border border-black '>
+                    <span className='py-6 font-heading text-4xl leading-8 w-full '>Signup</span>
+                </div>
+                
+                <div className='pt-10 flex flex-col space-y-4'>
+                    <button className=' items-center justify-center text-2xl bg-[#2A7AEDFF] rounded-xs h-12 p-2 w-full'>
+                        sign in google
+                    </button>
+                    <button className=' items-center justify-center text-2xl font-sans text-white bg-[#070707] rounded-xs h-12 p-2 w-full'>
+                        sign up apple
+                    </button>
+                </div>
+        
+
+           
             <form>
                 <div className='sm:flex'>
                     <div className=' flex flex-col'>

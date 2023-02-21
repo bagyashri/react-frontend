@@ -3,9 +3,9 @@ import React from 'react'
 export default function Sample2() {
   return (
    
-                  
-            <div className='container'> 
-            shnfs
+          <div className='flex justify-center items-center mx-auto px-6 py-6'>    
+            <div className='container w-1/2 h-3/4 bg-black'> 
+          
                 <div className='  bg-primary-600 flex flex-col'> 
                     <div className='flex justify-start bg-black'>
                       <span className=' heading '>
@@ -63,7 +63,9 @@ export default function Sample2() {
                         </div>                        
                     </form>                                     
                 </div>           
-            </div>       
+            </div>
+          
+          </div>     
      
     
   )
