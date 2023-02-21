@@ -1,8 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Button 2077 */
+/* Screen 1 */
+.page {
+    position: absolute; 
+    top: 0px; 
+    left: -1891px; 
+    width: 1440px; 
+    height: 900px; 
+    background: #FFFFFFFF; 
+  }
+  /* Button 2077 */
 .button {
     position: absolute; 
     top: 146px; 
