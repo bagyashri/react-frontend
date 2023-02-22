@@ -47,7 +47,7 @@ export default function Login() {
                           </a>
                         </p>
                       </div>
-                      <form onSubmit={handleSubmit}>
+                      <form>
                         <p className="mb-4 font-heading text-neutral-900 text-t8 text-center">
                           Sign In
                         </p>
@@ -135,6 +135,7 @@ export default function Login() {
                         <div className="text-center pt-1 pb-1">
                           <button
                             type="submit"
+                            onClick={handleSubmit}
                             className="w-full flex justify-center font-body opacity-100
                             py-2 px-4 shadow-l text-t4 
                             rounded-l text-white bg-primary-500 hover:bg-primary-600 hover:text-white
