@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [ "./src/**/*.{js,jsx,ts,tsx}"],
+  extend: {
+    backgroundImage: {
+      'hero': "url('../public/images/Sign Up.jpg')",
+    },
+},
   theme: {
     "colors": {
       "white": "#FFFFFF",  //customizing colors .can use with bg- or text- classes
@@ -313,4 +318,5 @@ module.exports = {
   ,
   
   plugins: [require("@tailwindcss/forms")],
+
 }

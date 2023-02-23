@@ -1,15 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import Screen from './components/Screen';
+// import Screen from './components/Screen';
+import Signup from './components/Signup';
 
 function App() {
   return (
-    <>
+ 
 
-    {/* <Sample/> */}
-    <Screen/>
 
-    </>
+    // <Screen/>
+    <Signup/>
+
+    
 
   );
 }
