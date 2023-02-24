@@ -17,10 +17,10 @@ export default function Signup() {
 
   return (
 
-    <section className='h-screen'>
-      <div className="container lg:h-full  p-10 border border-[#227b7e] ">
+    <section className='h-full bg-[#20b3b8]'>
+      <div className="container lg:h-full bg-[#20b3b8] ">
         <div className="gap-6 flex lg:h-full flex-wrap items-center justify-center text-body dark:text-neutral-200">
-          <div className="w-full lg:w-3/5">
+          <div className="w-full md:my-10 lg:w-3/5">
             <div className="block rounded-lg bg-white shadow-lg dark:bg-neutral-800">
               <div className="gap-0 lg:flex lg:flex-wrap rounded-lg">
                  {/* left section */}
@@ -132,26 +132,16 @@ export default function Signup() {
                     </form> 
                   </div>
                 </div>
-              
-                
-                
-                
+      
                 </div>
                 {/* right section */}
-                <div className="md:px-0 lg:w-2/5 rounded-r-lg">
-                <div className="md:mt-6 md:pt-12">
-                
-                <div className='object-center w-full h-1/2 mx-auto'>
+                <div className="flex md:py-10 h-1/2  my-10 lg:w-2/5 rounded-r-lg md:mt-6 md:pt-12 justity-center item-center">
+  
                   <img
                   className='w-full'
                   src="./images/signup.png"
                   alt="logo"/>
 
-                
-               
-                 
-                </div>
-                </div>
                 </div>
               
               </div>
