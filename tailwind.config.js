@@ -1,11 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+});
+
 module.exports = {
-  content: [ "./src/**/*.{js,jsx,ts,tsx}"],
-  extend: {
-    backgroundImage: {
-      'hero': "url('../public/images/Sign Up.jpg')",
-    },
-},
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     "colors": {
       "white": "#FFFFFF",  //customizing colors .can use with bg- or text- classes
@@ -141,6 +148,7 @@ module.exports = {
         "300":"#DEE1E6FF",
         "350":"#CFD2DAFF",
         "400":"#BDC1CAFF",
+        "500":"#9095A1FF",
         "600":"#565D6DFF",
         "700":"#323743FF",
         "900":"#171A1FFF"
@@ -198,6 +206,10 @@ module.exports = {
         "t10": [
           "3rem",
           "4.25rem"
+        ],
+        "t11": [
+          "3.5rem",
+          "4.87rem"
         ]
       },
       "textDecorationThickness": {
@@ -259,7 +271,9 @@ module.exports = {
         "Sz24": "40rem",
         "Sz25": "48rem",
         "Sz26": "56rem",
-        "Sz27": "64rem"
+        "Sz27": "64rem",
+        "Sz28":"30rem",
+        "Sz29":"32.5rem"
       },
       "height": {
         "Sz_NONE": "0rem",
@@ -290,7 +304,9 @@ module.exports = {
         "Sz24": "40rem",
         "Sz25": "48rem",
         "Sz26": "56rem",
-        "Sz27": "64rem"
+        "Sz27": "64rem",
+        "Sz28":"25rem",
+        "Sz29":"11.4rem"
       },
       /* If you’d like to preserve the default values for a theme option but also add new values, 
       add your extensions under the extend key in the theme section of your configuration file.*/
@@ -298,7 +314,6 @@ module.exports = {
         "xs": "0.1875rem",
         "s": "0.25rem",
         "m": "0.375rem",
-        "l": "0.5rem",
         "xl": "0.75rem",
         "2xl":"1.125rem", 
         "tl":"1.5rem",
@@ -314,9 +329,7 @@ module.exports = {
       }
     }
   
-  }
-  ,
+  },
   
-  plugins: [require("@tailwindcss/forms")],
-
+  plugins: [],
 }
