@@ -5,14 +5,35 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 
+
+
 import Work from "./Work";
+import Info from "./Info";
+import About from "./About";
  
 export default function Home(props) {
-  const [open, setOpen] = useState(0);
+  const [open, setOpen] = useState(1);
+  const [open1, setOpen1] = useState(1);
+  const [open2, setOpen2] = useState(1);
+  const [open3, setOpen3] = useState(1);
+  const [open4, setOpen4] = useState();
+  
   
  
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
+  };
+  const handleOpen1 = (value) => {
+    setOpen1(open1 === value ? 0 : value);
+  };
+  const handleOpen2 = (value) => {
+    setOpen2(open2 === value ? 0 : value);
+  };
+  const handleOpen3 = (value) => {
+    setOpen3(open3 === value ? 0 : value);
+  };
+  const handleOpen4 = (value) => {
+    setOpen4(open4 === value ? 0 : value);
   };
  
   const customAnimation = {
@@ -22,33 +43,34 @@ export default function Home(props) {
  
   return (
     <Fragment>
-      <div className="flex flex-col gap-5">
-      <Accordion open={open === 1} animate={customAnimation} className="font-body border border-black">
-        <AccordionHeader onClick={() => handleOpen(1)}>
+      <div className="flex flex-col items-center gap-5 text-t2 md:text-t4">
+      <Accordion open={open1 === 1} animate={customAnimation} className="font-body border border-[#F3F4F6FF] p-5 text-t2 md:text-t3 lg:text-t4">
+        <AccordionHeader onClick={() => handleOpen1(1)}>
           GENERAL INFORMATION
         </AccordionHeader>
         <AccordionBody>
-        
+        <Info/>
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 2} animate={customAnimation} className="font-body">
-        <AccordionHeader onClick={() => handleOpen(2)}>
+      <Accordion open={open2 === 2} animate={customAnimation} className="font-body border border-[#F3F4F6FF] p-5 text-t2 md:text-t3 lg:text-t4 ">
+        <AccordionHeader onClick={() => handleOpen2(2)}>
           ABOUT
         </AccordionHeader>
         <AccordionBody>
-        
+        <About/>
+
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} animate={customAnimation} className="font-body">
-        <AccordionHeader onClick={() => handleOpen(3)}>
+      <Accordion open={open3 === 3} animate={customAnimation} className="font-body  border border-[#F3F4F6FF] p-5 text-t2 md:text-t3 lg:text-t4">
+        <AccordionHeader onClick={() => handleOpen3(3)}>
            WORKING EXPERIENCE
         </AccordionHeader>
         <AccordionBody>
         <Work/>
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 4} animate={customAnimation} className="font-body">
-        <AccordionHeader onClick={() => handleOpen(4)}>
+      <Accordion open={open4 === 4} animate={customAnimation} className="font-body border border-[#F3F4F6FF] p-5 text-t2 md:text-t3 lg:text-t4">
+        <AccordionHeader onClick={() => handleOpen4(4)}>
           SKILLS
         </AccordionHeader>
         <AccordionBody>
@@ -56,7 +78,7 @@ export default function Home(props) {
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 5} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(5)} className="font-body">
+        <AccordionHeader onClick={() => handleOpen(5)} className="font-body border border-[#F3F4F6FF] p-5 text-t2 md:text-t3 lg:text-t4">
          EDUCATION
         </AccordionHeader>
         <AccordionBody>
