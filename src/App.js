@@ -5,6 +5,7 @@ import Screen from './components/Screen';
 import Signup from './components/Signup';
 
 import User from './components/User';
+import Sidebar from './components/Sidebar';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
@@ -20,6 +21,7 @@ function App() {
       <Route path="/signup" element={<Signup />} />
 
       <Route path="/user" element={<User />} />
+      <Route path="/sidebar" element={<Sidebar />} />
 
    
    

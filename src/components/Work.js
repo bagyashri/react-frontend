@@ -17,12 +17,12 @@ export default function Work() {
     setEndDate(event.target.value);
   };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log({ cname, ctype,startDate, endDate, description});
-        //postLoginDetails();
-        // navigate("/home");
-     };
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log({ cname, ctype,startDate, endDate, description});
+    //     //postLoginDetails();
+    //     // navigate("/home");
+    //  };
     const handleDelete = (e) => {
 // logic to delete the work experience
      };
@@ -32,11 +32,18 @@ export default function Work() {
     <>
 
         
-            <div className='flex justify-between'>
+            <div className='flex justify-between mt-5'>
                 <h className="text-t5 text-[#56B4B8FF] ">First working experience</h>
-                <buttton onclick={handleDelete} className=" p-1 rounded-sm bg-primary-400">delete</buttton>
+                <buttton onclick={handleDelete} className="hover">
+                <img
+                // src="https://www.shutterstock.com/image-photo/closeup-portrait-yong-woman-casual-260nw-1554086789.jpg"
+                src="./images/delete.png"
+                alt=""
+                className="p-0 h-5"
+              />
+                </buttton>
             </div>
-            <form onSubmit={handleSubmit} className='mt-5 font-body'>
+            {/* <form onSubmit={handleSubmit} className='mt-5 font-body'> */}
                         <div className=''>
                           
                             {/* input  for job type and compnay name */}
@@ -117,15 +124,15 @@ export default function Work() {
                                
                             </div>
                             {/* submit button */}
-                            <div className='flex justify-end'>
+                            {/* <div className='flex justify-end'>
                             <button type="submit"
                             className=" border border-gray-300 text-white bg-[#3F9396FF] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  px-5 p-1 md:p-2  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Add job
                             </button>
-                            </div>
+                            </div> */}
                             
                         </div>
-                    </form> 
+                    {/* </form>  */}
 
     
     

@@ -90,7 +90,7 @@ export default function Screen() {
                                      value={password}
                                      onChange={(e) => {
                                         setPassword(e.target.value);
-                                      }}
+                                      }} 
                                     id="password" className="text-[#9095A1FF] border-[#9095A1FF] font-body border text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 md:p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter least 8+ characters" required/>
                                 </div> 
                             

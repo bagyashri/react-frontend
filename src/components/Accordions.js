@@ -11,12 +11,12 @@ import Work from "./Work";
 import Info from "./Info";
 import About from "./About";
  
-export default function Home(props) {
-  const [open, setOpen] = useState(1);
-  const [open1, setOpen1] = useState(1);
-  const [open2, setOpen2] = useState(1);
-  const [open3, setOpen3] = useState(1);
-  const [open4, setOpen4] = useState();
+export default function Home() {
+  const [open, setOpen] = useState(0);
+  const [open1, setOpen1] = useState(0);
+  const [open2, setOpen2] = useState(0);
+  const [open3, setOpen3] = useState(0);
+  const [open4, setOpen4] = useState(0);
   
   
  
@@ -44,7 +44,7 @@ export default function Home(props) {
   return (
     <Fragment>
       <div className="flex flex-col items-center gap-5 text-t2 md:text-t4">
-      <Accordion open={open1 === 1} animate={customAnimation} className="font-body border border-[#F3F4F6FF] p-5 text-t2 md:text-t3 lg:text-t4">
+      <Accordion id="hello" open={open1 === 1} animate={customAnimation} className="font-body border border-[#F3F4F6FF] p-5 text-t2 md:text-t3 lg:text-t4">
         <AccordionHeader onClick={() => handleOpen1(1)}>
           GENERAL INFORMATION
         </AccordionHeader>
@@ -58,7 +58,6 @@ export default function Home(props) {
         </AccordionHeader>
         <AccordionBody>
         <About/>
-
         </AccordionBody>
       </Accordion>
       <Accordion open={open3 === 3} animate={customAnimation} className="font-body  border border-[#F3F4F6FF] p-5 text-t2 md:text-t3 lg:text-t4">
@@ -74,7 +73,7 @@ export default function Home(props) {
           SKILLS
         </AccordionHeader>
         <AccordionBody>
-        {props.body2}
+       
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 5} animate={customAnimation}>
@@ -82,7 +81,7 @@ export default function Home(props) {
          EDUCATION
         </AccordionHeader>
         <AccordionBody>
-          {props.body3}
+        
         </AccordionBody>
       </Accordion>
 

@@ -23,5 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 
 
-
-
+src/components/About.js
+src/components/Work.js
+src/components/Info.js
+src/components/Sidebar.js
+src/components/Accordions.js
+src/components/New.js

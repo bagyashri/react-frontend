@@ -1,18 +1,12 @@
 import {React, useState} from 'react'
 
-export default function Info() {
+export default function Info(props) {
  
     const [name, setName] = useState("");
 
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log({ name, title, description});
-        //postLoginDetails();
-        // navigate("/home");
-     };
 
     
 
@@ -20,8 +14,8 @@ export default function Info() {
   return (
     <>
         
-              <form onSubmit={handleSubmit} className='mt-5 font-body'>
-                        <div className=''>
+              {/* <form onSubmit={handleSubmit} className='mt-5 font-body'> */}
+                        <div className='mt-5 font-body'>
                             <div className='flex justify-start gap-3'>
                                 <div className='flex flex-col'>
                                     <h2 className='font-semibold'>Avatar</h2>
@@ -83,16 +77,16 @@ export default function Info() {
                             </div>
                            
                             {/* submit button */}
-                            <div className='flex justify-end'>
+                            {/* <div className='flex justify-end'>
                             <button type="submit"
                             className=" border border-gray-300 text-white bg-[#3F9396FF] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  px-5 p-1 md:p-2  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Submit
                             </button>
-                            </div>
+                            </div> */}
                          
                             
                         </div>
-                    </form> 
+                    {/* </form>  */}
                    
 
     

@@ -2,16 +2,13 @@ import {React, useState} from 'react'
 
 export default function About() {
     const [description, setDescription] = useState("");
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log({ description});
     
-     };
+   
 
   return (
     <div>
-         <form onSubmit={handleSubmit} className='mt-5 font-body'>
-                        <div className=''>
+         {/* <form onSubmit={handleSubmit} className='mt-5 font-body'> */}
+                        <div className='mt-5 font-body'>
                           
                                             
                          
@@ -33,16 +30,16 @@ export default function About() {
                                 </div>
                            
                             {/* submit button */}
-                            <div className='flex justify-end'>
+                            {/* <div className='flex justify-end'>
                             <button type="submit"
                             className=" border border-gray-300 text-white bg-[#3F9396FF] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  px-5 p-1 md:p-2  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Submit
                             </button>
-                            </div>
+                            </div> */}
                          
                             
                         </div>
-                    </form> 
+                    {/* </form>  */}
       
     </div>
   )

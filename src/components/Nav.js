@@ -3,8 +3,8 @@ import Novu from './Novu'
 
 export default function Nav() {
   return (
-    <div className='mx-auto max-w-screen'>
-    <nav>
+    <nav className='mx-auto max-w-screen'>
+    
     <div className='flex justify-between'>
         
         <div className='flex gap-2 items-center'>
@@ -40,8 +40,8 @@ export default function Nav() {
         </div>
         </div>
       
+
 </nav>
-</div>
 
   )
 }
